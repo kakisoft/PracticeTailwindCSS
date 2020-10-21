@@ -1,0 +1,29 @@
+npx create-next-app nextjs-with-tailwindcss
+cd nextjs-with-tailwindcss
+npm install -D tailwindcss
+npx tailwindcss init
+
+
+##### tailwind.config.js
+```js
+purge: ['./components/**/*.jsx', './pages/**/*.jsx'],
+```
+
+npm i -D postcss-preset-env
+touch postcss.config.js
+
+
+##### postcss.config.js
+```js
+module.exports = {
+  plugins: ['tailwindcss', 'postcss-preset-env'],
+}
+```
+
+
+npm run dev
+
+
+_____
+
+
